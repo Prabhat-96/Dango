@@ -14,8 +14,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{% static 'my_app/img/Programmerji logo.png' %}" rel="icon">
-  <link href="{% static 'my_app/img/Programmerji logo.png' %}" rel="apple-touch-icon">
+  <link href="{% static 'my_app/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'my_app/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -47,17 +47,16 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
-      <!--Trying to upload logo with title name-->
-      <!--<a href="#"><img id="logo" src="imgur.jpg"></a>-->
-      <h1 class="logo me-auto"><a href="#"><font >ProgrammerJi</font></a></h1>
+
+      <h1 class="logo me-auto"><a href="home"><font >ProgrammerJi</font></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-       <a href="index.html" class="logo me-auto"><img src="my_app/img/imgur.jpg" alt="" class="img-fluid"></a>
+      <!-- <a href="index.html" class="logo me-auto"><img src="my_app/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto active" href="home">Home</a></li>
           {% comment %} <li><a class="nav-link scrollto" href="#courses">courses</a></li> {% endcomment %}
-           <li><a class="nav-link scrollto" href="#">courses</a></li> 
+          <li><a class="nav-link scrollto" href="#pricing">courses</a></li> 
           <li><a class="nav-link scrollto" href="#about">about</a></li>
           <li><a class="nav-link scrollto" href="#">Privacy policy</a></li>
           {% comment %} <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a> {% endcomment %}
@@ -78,7 +77,7 @@
             {% comment %} </ul> {% endcomment %}
           {% comment %} </li> {% endcomment %}
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#">Login|Signup</a></li>
+          <li><a class="getstarted scrollto" href="signin">Login|Signup</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -118,27 +117,27 @@
         <div class="row" data-aos="zoom-in">
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{% static 'my_app/img/clients/client-1.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'my_app/img/clients/c_logo.png' %}" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{% static 'my_app/img/clients/client-2.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'my_app/img/clients/jav_logo.png' %}" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{% static 'my_app/img/clients/client-3.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'my_app/img/clients/py_logo.png' %}" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{% static 'my_app/img/clients/client-4.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'my_app/img/clients/js_logo.png' %}" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{% static 'my_app/img/clients/client-5.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'my_app/img/clients/c++_logo.png' %}" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{% static 'my_app/img/clients/client-6.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'my_app/img/clients/kot_logo.png' %}" class="img-fluid" alt="">
           </div>
 
         </div>
@@ -159,8 +158,8 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
 
-              <center><h3 img>C</h3>
-              <h4><sup>$</sup>80</h4>
+              <center><h3 img>C++</h3>
+              <h4><sup>$</sup>40</h4>
               <ul>
                 <li><i class="bx bx-check"></i>Basic to advance</li>
                 <li><i class="bx bx-check"></i> Access For 3 years</li>
@@ -335,7 +334,7 @@
     </section><!-- End Skills Section -->
 
     <!-- ======= Services Section ======= -->
-    <!-- <section id="services" class="services section-bg">
+    <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -384,7 +383,7 @@
         </div>
 
       </div>
-    </section>--><!-- End Services Section -->
+    </section><!-- End Services Section -->
 
     <!-- ======= Cta Section ======= -->
     {% comment %} <section id="cta" class="cta">
@@ -754,7 +753,7 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>2103013088@ipec.org.in@gmail.com</p>
+                <p>contact.programmerji@gmail.com</p>
               </div>
 
               <div class="phone">
@@ -808,21 +807,6 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Subscribe For Latest Updates</h4>
-            {% comment %} <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p> {% endcomment %}
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -877,19 +861,10 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>ProgrammerJi</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        {% comment %} Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> {% endcomment %}
+        &copy; Copyright <strong><span>ProgrammerJi</span></strong> All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
