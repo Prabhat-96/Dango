@@ -18,6 +18,9 @@ def signin(request):
 def Languages(request):
   return render(request,'Languages.html')
 
+def Levels(request):
+    return render(request,'Levels.html')
+
 
 def login(request):
   global email2,password2
