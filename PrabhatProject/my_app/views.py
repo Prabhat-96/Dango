@@ -16,6 +16,13 @@ def my_app(request):
 def signin(request):
   return render(request,'signin.html')
 
+def Languages(request):
+  return render(request,'Languages.html')
+
+def Levels(request):
+    return render(request,'Levels.html')
+
+
 def login(request):
   global email2,password2
   if request.method=='POST':

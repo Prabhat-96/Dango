@@ -10,5 +10,10 @@ urlpatterns = [
     path('home',include('my_app.urls')),
     path('signup',include('my_app.urls')),
     path('login',include('my_app.urls')),
+<<<<<<< HEAD
     path('test',include('my_app.urls')),
+=======
+    path('Languages',include('my_app.urls')),
+    path('Levels',include('my_app.urls')),
+>>>>>>> fcd19046ca084faa470eaaa2cd30b376ab3a0506
 ]
