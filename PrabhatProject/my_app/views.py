@@ -10,7 +10,7 @@ email2=''
 password2=''
 
 def my_app(request):
-  return render(request,'index.html')
+  return render(request,'Languages.html')
 
 def signin(request):
   return render(request,'signin.html')
