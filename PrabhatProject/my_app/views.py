@@ -1,14 +1,15 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.template import loader
 from django.contrib import messages
+# from .models import users
 import mysql.connector
 email=''
 fullname=''
 password=''
 email2=''
 password2=''
-
+testing=''
 def my_app(request):
   return render(request,'index.html')
 
@@ -62,3 +63,6 @@ def signup(request):
 
 def forgot(request):
   return render(request,'forgot.html')
+
+def test(request):
+  return render(request,"test.html")
