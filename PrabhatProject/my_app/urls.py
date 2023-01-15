@@ -9,4 +9,5 @@ urlpatterns = [
     path('home',views.my_app),
     path('signup',views.signup),
     path('login',views.signin),
+    path('Languages',views.Languages)
 ]

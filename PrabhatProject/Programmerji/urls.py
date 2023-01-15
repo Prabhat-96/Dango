@@ -25,4 +25,5 @@ urlpatterns = [
     path('home',include('my_app.urls')),
     path('signup',include('my_app.urls')),
     path('login',include('my_app.urls')),
+    path('Languages',include('my_app.urls')),
 ]

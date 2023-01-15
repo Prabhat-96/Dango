@@ -10,10 +10,14 @@ email2=''
 password2=''
 
 def my_app(request):
-  return render(request,'Languages.html')
+  return render(request,'index.html')
 
 def signin(request):
   return render(request,'signin.html')
+
+def Languages(request):
+  return render(request,'Languages.html')
+
 
 def login(request):
   global email2,password2
