@@ -9,10 +9,6 @@ urlpatterns = [
     path('home',views.my_app),
     path('signup',views.signup),
     path('login',views.signin),
-
-    path('test',views.test),
-
-
     path('Languages',views.Languages),
     path('Levels',views.Levels)
     ]
